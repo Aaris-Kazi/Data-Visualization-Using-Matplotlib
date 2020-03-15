@@ -20,9 +20,11 @@ i = test_data[test_data.Name == 'Afif plaavkar']
 print(i)
 j = test_data[test_data.Name == 'Sakib Arkate']
 print(j)
-plt.plot(i.Subject_code,i.Attendance)
-plt.plot(j.Subject_code,j.Attendance)
+
+plt.plot(i.Subject,i.Attendance)
+plt.plot(j.Subject,j.Attendance)
 plt.legend(['Afif', 'Sakib'])
 plt.xlabel('Subject Code')
 plt.ylabel('Attendace Percentage')
+plt.grid(True)
 plt.show()
