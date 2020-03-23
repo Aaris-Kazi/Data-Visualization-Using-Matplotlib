@@ -8,7 +8,7 @@ bug template instead of this one. ***Thank you!***
 ### Your Jupyter and/or Python environment
 *Please provide as much info as you readily know*
 - **Jupyter server running:**                       Local | Remote | N/A
-- **XAMPP as local server  **                       7.4.1
+- **XAMPP as local server**                       7.4.1
 - **VS Code version:**                                #.##
 - **Setting python.jediEnabled:**               true | false
 - **Python and/or Anaconda version:**     #.#.#
