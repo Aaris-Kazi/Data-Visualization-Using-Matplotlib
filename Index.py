@@ -13,8 +13,8 @@ def main():
             dg.data()
         
         elif n==3:
-            
             dv.data_vis()
+        
         elif n==4:
             print('\t\tThanks For using Our Program')
             return False

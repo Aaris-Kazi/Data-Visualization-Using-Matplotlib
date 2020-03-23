@@ -7,11 +7,13 @@ def data():
     print(test_data)
     
     i = test_data[test_data.Name == 'Afif plaavkar']
-    print(i)
+    
     j = test_data[test_data.Name == 'Sakib Arkate']
-    print(j)
+    
     k = test_data[test_data.Name == 'Khan Osama']
-    print(j)
+    
+    result = test_data[test_data.Subject =='AVG TH + PR']
+    print(result)
 
     plt.plot(i.Subject,i.Attendance)
     plt.plot(j.Subject,j.Attendance)
@@ -23,8 +25,7 @@ def data():
     plt.title('Attendance of every subject')
     plt.show()
 
-    result = test_data[test_data.Subject =='AVG TH + PR']
-    print(result)
+    
 def show():
     test_data = pd.read_csv(r'Test.csv')
     return test_data
