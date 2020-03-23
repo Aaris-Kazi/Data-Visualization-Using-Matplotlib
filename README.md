@@ -14,3 +14,5 @@ bug template instead of this one. ***Thank you!***
 - **Python and/or Anaconda version:**     #.#.#
 - **OS:**                                                     Windows | Mac | Linux (distro):
 - **Virtual environment:**                          conda | venv | virtualenv | N/A | .
+### Now it Has a GUI and mostly work if you run ### 
+- **File to Execute** INdex_GUI.py
