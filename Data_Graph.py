@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def data():
-    test_data = pd.read_csv(r'Test.csv')
+    test_data = pd.read_csv(r'C:\Users\User\Desktop\Data-Visualization-Using-Matplotlib-master\Test.csv')
     print(test_data)
     
     i = test_data[test_data.Name == 'Afif plaavkar']
