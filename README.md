@@ -16,3 +16,4 @@ bug template instead of this one. ***Thank you!***
 - **Virtual environment:**                          conda | venv | virtualenv | N/A | .
 ### Now it Has a GUI and mostly work if you run ### 
 - **File to Execute** Index_GUI.py
+![Screenshot](https://github.com/Aaris-Kazi/Data-Visualization-Using-Matplotlib/blob/master/GUI_OUTPUT.PNG)
