@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 def data_vis():
     print('\t\tWelcome to Attendace Stats')
     x = input('Enter the Name:\t')
-    test_data = pd.read_csv(r'C:\Users\User\Desktop\Data-Visualization-Using-Matplotlib-master\Test.csv')
+    test_data = pd.read_csv(r'C:\Users\aaris\Downloads\Data-Visualization-Using-Matplotlib-master\Test.csv')
     i = test_data[test_data.Name == x]
     print(i)
 
@@ -23,7 +23,7 @@ def data_vis():
 
 def data_vis1(x):
     print('\t\tWelcome to Attendace Stats')
-    test_data = pd.read_csv(r'C:\Users\User\Desktop\Data-Visualization-Using-Matplotlib-master\Test.csv')
+    test_data = pd.read_csv(r'C:\Users\aaris\Downloads\Data-Visualization-Using-Matplotlib-master\Test.csv')
     i = test_data[test_data.Name == x]
     print(i)
 
@@ -34,4 +34,6 @@ def data_vis1(x):
     plt.ylabel('Attendace Percentage')
     plt.grid(True)
     plt.title('Attendance of every subject')
+    plt.tight_layout(True)
+    plt.subplots_adjust(left = 0.05, right = 1.0)
     plt.show()

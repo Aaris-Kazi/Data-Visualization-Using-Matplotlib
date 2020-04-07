@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def data():
-    test_data = pd.read_csv(r'C:\Users\User\Desktop\Data-Visualization-Using-Matplotlib-master\Test.csv')
+    test_data = pd.read_csv(r'C:\Users\aaris\Downloads\Data-Visualization-Using-Matplotlib-master\Test.csv')
     print(test_data)
     
     i = test_data[test_data.Name == 'Afif plaavkar']
@@ -23,6 +23,8 @@ def data():
     plt.ylabel('Attendace Percentage')
     plt.grid(True)
     plt.title('Attendance of every subject')
+    plt.tight_layout(True)
+    plt.subplots_adjust(left = 0.05, right = 1.0)
     plt.show()
 
     
