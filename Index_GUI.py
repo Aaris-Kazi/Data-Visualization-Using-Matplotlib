@@ -26,13 +26,13 @@ def main():
     def inp_text():
         x = text_entry.get()
         dv.data_vis1(x)
-        for i in td.td3(x):
-            op.insert(END, i)
+        
 
     window = Tk()
     text_input = StringVar()
     text_entry = Entry(window, textvariable = 'text_input', border= 1,font = (20))
     window.title('Attendance Management System')#Ploting the titlte
+    window.iconbitmap(r'favicon.ico')
     label = Label(window,text= 'Welcome To Attendance Management System',font = ('bold',16))#ploting the label
     btn = Button(window, text = 'To show all defaulter',command = output_database )
     btn2 = Button(window, text = 'To show Specific Graph Data',command = inp_text)
@@ -46,6 +46,7 @@ def main():
     scroll.configure(command = op.yview)
 
     clr_btn = Button(window, text = 'CLear', command = clear_text )
+    
     label.pack()
 
     btn.place(x = 30, y = 50 )
@@ -56,6 +57,7 @@ def main():
     op.place(x = 30, y = 190)
     scroll.place(x = 630,y = 190, height = 160)
     clr_btn.place(x = 630, y = 360)
+    
     window.geometry('720x480')
     
     window.mainloop() 
