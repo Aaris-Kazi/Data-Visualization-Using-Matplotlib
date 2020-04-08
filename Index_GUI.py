@@ -4,6 +4,7 @@ import Data_Graph as dg
 import data_visual as dv
 
 
+
 def main():
 
 #list Defaulter command
@@ -30,13 +31,21 @@ def main():
 
     window = Tk()
     text_input = StringVar()
+    searc = PhotoImage(file = r'C:\Users\aaris\Downloads\Data-Visualization-Using-Matplotlib-master\search.png')
+    search = searc.subsample(20, 20)
+    clea = PhotoImage(file = r'C:\Users\aaris\Downloads\Data-Visualization-Using-Matplotlib-master\clear.png')
+    clear = clea.subsample(20, 20)
+    sho = PhotoImage(file = r'C:\Users\aaris\Downloads\Data-Visualization-Using-Matplotlib-master\find.png')
+    show = sho.subsample(20, 20)
+    ques = PhotoImage(file = r'C:\Users\aaris\Downloads\Data-Visualization-Using-Matplotlib-master\question.png')
+    quest = ques.subsample(20, 20)
     text_entry = Entry(window, textvariable = 'text_input', border= 1,font = (20))
     window.title('Attendance Management System')#Ploting the titlte
-    window.iconbitmap(r'favicon.ico')
+    window.iconbitmap(r'C:\Users\aaris\Downloads\Data-Visualization-Using-Matplotlib-master\favicon.ico')
     label = Label(window,text= 'Welcome To Attendance Management System',font = ('bold',16))#ploting the label
-    btn = Button(window, text = 'To show all defaulter',command = output_database )
-    btn2 = Button(window, text = 'To show Specific Graph Data',command = inp_text)
-    btn3 = Button(window, text = 'To Show All Data',command = all_data)
+    btn = Button(window, text = 'Defaulters',command = output_database, image = quest, compound = LEFT, relief = GROOVE, border = 1 )
+    btn2 = Button(window, text = 'Search',  command = inp_text, image = search, compound = LEFT, relief = GROOVE, border = 1)
+    btn3 = Button(window, text = 'Show All',command = all_data, image = show, compound = LEFT, relief = GROOVE, border = 1)
 
     op = Listbox(window, height = 10, width = 100, border = 0)
 
@@ -45,7 +54,7 @@ def main():
     op.configure(yscrollcommand = scroll.set)
     scroll.configure(command = op.yview)
 
-    clr_btn = Button(window, text = 'CLear', command = clear_text )
+    clr_btn = Button(window, text = 'CLear', command = clear_text, image = clear, compound = LEFT, relief = GROOVE, border = 1 )
     
     label.pack()
 

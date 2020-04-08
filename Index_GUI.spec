@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['Index_GUI.py'],
-             pathex=['C:\\Users\\User\\Desktop\\Data-Visualization-Using-Matplotlib-master'],
+             pathex=['C:\\Users\\aaris\\Downloads\\Data-Visualization-Using-Matplotlib-master'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -30,4 +30,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=True )
+          console=False , icon='C:\\Users\\aaris\\Downloads\\Data-Visualization-Using-Matplotlib-master\\favicon.ico')

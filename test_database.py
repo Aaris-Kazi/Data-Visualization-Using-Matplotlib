@@ -23,3 +23,11 @@ def td2():
     cursor.execute('select * from test')
     rows = cursor.fetchall()
     return rows
+
+def td3(x):
+    conn = mysql.connector.connect(host='localhost', user='root', password='', database='python_database')
+
+    cursor = conn.cursor()
+    cursor.execute('select * from test')
+    rows = cursor.fetchall()
+    return rows
