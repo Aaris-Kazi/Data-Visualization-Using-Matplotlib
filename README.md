@@ -14,8 +14,7 @@ bug template instead of this one. ***Thank you!***
 - **Python and/or Anaconda version:**     #.#.#
 - **OS:**                                                     Windows | Mac | Linux (distro):
 - **Virtual environment:**                          conda | venv | virtualenv | N/A | .
-### Now it Has a GUI and mostly work if you run ### 
-![Demo](https://github.com/Aaris-Kazi/Data-Visualization-Using-Matplotlib/blob/master/PYTHON_GUI.mp4)
+### Now it Has a GUI and mostly work if you run ###
 - **File to Execute** Index_GUI.py
 ![Screenshot](https://github.com/Aaris-Kazi/Data-Visualization-Using-Matplotlib/blob/master/App.PNG)
 ### And Graphical Output using Matplotlib
