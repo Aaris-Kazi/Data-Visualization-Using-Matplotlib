@@ -4,25 +4,32 @@ import Data_Graph as dg
 import data_visual as dv
 
 
-
 def main():
 
 #list Defaulter command
     def output_database():
-        op.delete(0,END)
-        op.insert(END, 'Defaulter')
-        for i in td.td1():
-            op.insert(END, i)
+        try:
+            op.delete(0,END)
+            op.insert(END, 'Defaulter')
+            for i in td.td1():
+                op.insert(END, i)
+        except Exception:
+            op.delete(0,END)
+            op.insert(END, 'Could not Establish the connection:')
     def clear_text():
         op.delete(0,END)
 
     def all_data():
-        op.delete(0,END)
-        op.insert(END,'Name Attendance Subject Subject_Code')
-        for i in td.td2():
-            op.insert(END, i)
+        try:
+            op.delete(0,END)
+            op.insert(END,'Name Attendance Subject Subject_Code')
+            for i in td.td2():
+                op.insert(END, i)
 
-        dg.data()
+            dg.data()
+        except Exception:
+            op.delete(0,END)
+            op.insert(END, 'Could not Establish the connection:')
 
     def inp_text():
         x = text_entry.get()
@@ -48,7 +55,6 @@ def main():
     btn3 = Button(window, text = 'Show All',command = all_data, image = show, compound = LEFT, relief = GROOVE, border = 1)
 
     op = Listbox(window, height = 10, width = 100, border = 0)
-
     scroll = Scrollbar(window)
     #scroll option or scroll config
     op.configure(yscrollcommand = scroll.set)
