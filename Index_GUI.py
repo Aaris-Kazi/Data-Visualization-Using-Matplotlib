@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter.font import Font
 import test_database as td
 import Data_Graph as dg
 import data_visual as dv
@@ -15,7 +16,8 @@ def main():
                 op.insert(END, i)
         except Exception:
             op.delete(0,END)
-            op.insert(END, 'Could not Establish the connection:')
+            op.insert(END, "Could not Establish the connection")
+            op.itemconfig(0 , {'fg' : 'red'})
     def clear_text():
         op.delete(0,END)
 
@@ -30,6 +32,7 @@ def main():
         except Exception:
             op.delete(0,END)
             op.insert(END, 'Could not Establish the connection:')
+            op.itemconfig(0 , {'fg' : 'red'})
 
     def inp_text():
         x = text_entry.get()
